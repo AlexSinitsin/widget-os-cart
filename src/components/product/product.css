@@ -1,0 +1,9 @@
+.product {
+  padding: 40px;
+}
+.product p{
+  margin: 0px;
+}
+.product p span{
+  font-weight: bold
+}

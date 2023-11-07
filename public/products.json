@@ -1,0 +1,63 @@
+[
+  {
+    "name": "Adidas",
+    "color": "White",
+    "brand": "Adidas",
+    "price": 2000
+  },
+  {
+    "name": "Adidas",
+    "color": "Yellow",
+    "brand": "Adidas",
+    "price": 4000
+  },
+  {
+    "name": "Puma",
+    "color": "Black",
+    "brand": "Puma",
+    "price": 3000
+  },
+  {
+    "name": "Puma",
+    "color": "Green",
+    "brand": "Puma",
+    "price": 3500
+  },
+  {
+    "name": "Reebok",
+    "color": "Red",
+    "brand": "Reebok",
+    "price": 6500
+  },
+  {
+    "name": "Reebok",
+    "color": "Green",
+    "brand": "Reebok",
+    "price": 7500
+  },
+  {
+    "name": "Nike",
+    "color": "Red",
+    "brand": "Nike",
+    "price": 8500
+  },
+  {
+    "name": "Nike",
+    "color": "Green",
+    "brand": "Nike",
+    "price": 10000
+  },
+  {
+    "name": "Columbia",
+    "color": "Red",
+    "brand": "Columbia",
+    "price": 8500
+  },
+  {
+    "name": "Columbia",
+    "color": "Red",
+    "brand": "Columbia",
+    "price": 9000
+  }
+
+]

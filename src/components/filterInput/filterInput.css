@@ -1,0 +1,13 @@
+.filter__input input {
+    padding: 8px 8px;
+    border: 1px solid #acbdcd;
+    background: #fff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 10px;
+    width: calc(100% - 20px);
+}
+.filter__input input:focus {
+    outline: none
+}

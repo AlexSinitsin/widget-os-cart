@@ -1,0 +1,69 @@
+.filter .close{
+    display: none
+}
+
+.filter .filter__title {
+    color: #5a728b;
+    font-weight: bold;
+    display: flex;
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #d3dbe3;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+.filter .filter__title .filter__arrow {
+    flex-grow: 1;
+}
+.filter .filter__title .filter__arrow.close-block:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 2px;
+    right: 15px;
+    top: 16px;
+    background: #9CB0C4;
+    transform: rotate(45deg);
+}
+.filter .filter__title .filter__arrow.close-block:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 2px;
+    right: 9px;
+    top: 16px;
+    background: #9CB0C4;
+    transform: rotate(-45deg);
+}
+.filter .filter__title .filter__arrow:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 2px;
+    right: 9px;
+    top: 16px;
+    background: #9CB0C4;
+    transform: rotate(45deg);
+}
+.filter .filter__title .filter__arrow:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 2px;
+    right: 15px;
+    top: 16px;
+    background: #9CB0C4;
+    transform: rotate(-45deg);
+}
+.filter .filter__body .filter__checkbox:last-child {
+    padding-bottom: 16px; 
+}
+.filter .checkbox-box {
+    overflow-y: auto;
+    height: 170px;
+}

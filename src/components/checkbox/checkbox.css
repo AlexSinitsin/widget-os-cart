@@ -1,0 +1,17 @@
+.filter__checkbox {
+    list-style: none;
+    padding: 6px;
+}
+.filter__checkbox input {
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+.filter__checkbox label {
+    color: #2e3a47;
+    font-family: 'Open Sans','Helvetica Neue',-apple-system,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    margin-left: 6px;
+    cursor: pointer;
+}
