@@ -51,7 +51,8 @@ cursor: col-resize;
     height: 16px;
     border-radius: 10px;
     margin-left: 5px;
-    position: relative
+    position: relative;
+    cursor: pointer;
 }
 .filter .filter__title .filter__clean-data:before {
     content: '';

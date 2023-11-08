@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'rc-slider';
 import 'rc-slider/assets/index.css';
@@ -10,12 +10,19 @@ import { setFilteredSliderParam } from '../../actions/actionCreator';
 import FilterSliderInputMin from '../filterISliderInputs/filterSliderInputMin';
 import FilterSliderInputMax from '../filterISliderInputs/filterSliderInputMax';
 
-const FilterSlider = ({ filtering, filterData }) => {
+const FilterSlider = ({ reset, filtering, filterData }) => {
 
     const [minValue, setMinValue] = useState(filterData.slider_min_value)
     const [maxValue, setMaxValue] = useState(filterData.slider_max_value)
     const [isClose, setClose] = useState(false)
     const [isCleanSliderData, setCleanSliderData] = useState(true)
+
+    useEffect(() => {
+        setMinValue(filterData.slider_min_value)
+        setMaxValue(filterData.slider_max_value)
+        setCleanSliderData(true)
+        store.dispatch(setFilteredSliderParam({min: filterData.slider_min_value, max: filterData.slider_max_value}, filterData.display_name))
+    }, [reset])
 
     const onChangeInputMin = (minValue) => {
         console.log(minValue)
@@ -25,7 +32,7 @@ const FilterSlider = ({ filtering, filterData }) => {
             setMinValue(minValue)
         }
         setCleanSliderData(false)
-        store.dispatch(setFilteredSliderParam([minValue, maxValue], filterData.display_name))
+        store.dispatch(setFilteredSliderParam({min: minValue, max: maxValue}, filterData.display_name))
         filtering()
     }
 
@@ -38,7 +45,7 @@ const FilterSlider = ({ filtering, filterData }) => {
             setMaxValue(maxValue)
         }
         setCleanSliderData(false)
-        store.dispatch(setFilteredSliderParam([minValue, maxValue], filterData.display_name))
+        store.dispatch(setFilteredSliderParam({min: minValue, max: maxValue}, filterData.display_name))
         filtering()
     }
 
@@ -47,7 +54,7 @@ const FilterSlider = ({ filtering, filterData }) => {
         setMinValue(minValue)
         setMaxValue(maxValue)
         setCleanSliderData(false)
-        store.dispatch(setFilteredSliderParam([minValue, maxValue], filterData.display_name))
+        store.dispatch(setFilteredSliderParam({min: minValue, max: maxValue}, filterData.display_name))
         filtering()
     }
 
@@ -59,7 +66,7 @@ const FilterSlider = ({ filtering, filterData }) => {
         setMinValue(filterData.slider_min_value)
         setMaxValue(filterData.slider_max_value)
         setCleanSliderData(true)
-        store.dispatch(setFilteredSliderParam([filterData.slider_min_value, filterData.slider_max_value], filterData.display_name))
+        store.dispatch(setFilteredSliderParam({min: filterData.slider_min_value, max: filterData.slider_max_value}, filterData.display_name))
         filtering()
     }
 
@@ -107,11 +114,13 @@ const FilterSlider = ({ filtering, filterData }) => {
 FilterSlider.propTypes = {
     filterData: PropTypes.object,
     filtering: PropTypes.func,
+    reset: PropTypes.number
 }
 
 FilterSlider.defaultProps = {
     filterData: {},
     filtering: () => {},
+    reset: 0
 }
 
 export default FilterSlider;

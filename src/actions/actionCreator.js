@@ -5,7 +5,8 @@ import {
   SET_FILTERED_LIST_PARAM, 
   SET_FILTERED_SLIDER_PARAM, 
   SET_FILTERED_PRODUCTS,
-  INIT_FILTERED_PRODUCTS } from '../constants';
+  INIT_FILTERED_PRODUCTS,
+  RESET_FILTERED_PARAM } from '../constants';
 
 export const initFilters = (filters) => ({
   type: INIT_FILTERS,
@@ -24,6 +25,11 @@ export const initFilteredProducts = (products) => ({
 
 export const initFilteredParam = (filters) => ({
   type: INIT_FILTERED_PARAM,
+  payload: filters
+});
+
+export const resetFilteredParam = (filters) => ({
+  type: RESET_FILTERED_PARAM,
   payload: filters
 });
 

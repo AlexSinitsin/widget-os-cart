@@ -2,3 +2,7 @@
     background: #DCE3EA;
     width: 280px;
 }
+.button-reset {
+    margin: 10px;
+    width: calc(100% - 20px)
+}

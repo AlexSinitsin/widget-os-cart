@@ -1,15 +1,19 @@
-import React, { useState} from 'react';
+import React, { useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 
 import './checkbox.css';
 
-const Checkbox = ({ onChangeCheckbox, item }) => {
+const Checkbox = ({ reset, onChangeCheckbox, item }) => {
 
     const [isChecked, setChecked] = useState(false)
 
+    useEffect(() => {
+        const val = reset()
+        setChecked(val)
+    }, [reset])
+
     const toggleCheckbox = () => {
-        setChecked(!isChecked );
-        onChangeCheckbox(item.display_name)
+        onChangeCheckbox(item.display_name, setChecked)
     }
 
     return (
@@ -24,11 +28,13 @@ const Checkbox = ({ onChangeCheckbox, item }) => {
 Checkbox.propTypes = {
     onChangeCheckbox: PropTypes.func,
     item: PropTypes.object,
+    reset: PropTypes.func,
 }
 
 Checkbox.defaultProps = {
     onChangeCheckbox: () => {},
     item: {},
+    reset: () => {},
 }
 
 export default Checkbox;
