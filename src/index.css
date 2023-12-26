@@ -1,6 +1,14 @@
-body, p, div, li, span {
+body,
+p,
+div,
+li,
+span {
   color: #2e3a47;
-  font-family: 'Open Sans','Helvetica Neue',-apple-system,sans-serif;
+  font-family:
+    'Open Sans',
+    'Helvetica Neue',
+    -apple-system,
+    sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: normal;

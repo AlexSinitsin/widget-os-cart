@@ -1,12 +1,13 @@
-import { 
-  INIT_FILTERS, 
-  INIT_PRODUCTS, 
-  INIT_FILTERED_PARAM, 
-  SET_FILTERED_LIST_PARAM, 
-  SET_FILTERED_SLIDER_PARAM, 
+import {
+  INIT_FILTERS,
+  INIT_PRODUCTS,
+  INIT_FILTERED_PARAM,
+  SET_FILTERED_LIST_PARAM,
+  SET_FILTERED_SLIDER_PARAM,
   SET_FILTERED_PRODUCTS,
   INIT_FILTERED_PRODUCTS,
-  RESET_FILTERED_PARAM } from '../constants';
+  RESET_FILTERED_PARAM
+} from '../constants';
 
 export const initFilters = (filters) => ({
   type: INIT_FILTERS,
@@ -49,5 +50,3 @@ export const setFilteredProducts = (products) => ({
   type: SET_FILTERED_PRODUCTS,
   payload: products
 });
-
-

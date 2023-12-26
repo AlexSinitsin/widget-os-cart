@@ -1,8 +1,8 @@
 .filters {
-    background: #DCE3EA;
-    width: 280px;
+  background: #dce3ea;
+  width: 280px;
 }
 .button-reset {
-    margin: 10px;
-    width: calc(100% - 20px)
+  margin: 10px;
+  width: calc(100% - 20px);
 }

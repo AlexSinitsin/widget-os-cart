@@ -1,106 +1,106 @@
-.filter .close{
-    display: none
+.filter .close {
+  display: none;
 }
 
 .filter .filter__title {
-    color: #5a728b;
-    font-weight: bold;
-    display: flex;
-    padding: 10px;
-    cursor: pointer;
-    border-bottom: 1px solid #d3dbe3;
-    position: relative;
-    cursor: pointer;
-    display: flex;
+  color: #5a728b;
+  font-weight: bold;
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #d3dbe3;
+  position: relative;
+  cursor: pointer;
+  display: flex;
 }
 .filter .filter__title .filter__arrow {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 .filter .filter__title .filter__arrow.close-block:before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 8px;
-    height: 2px;
-    right: 15px;
-    top: 16px;
-    background: #9CB0C4;
-    transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 2px;
+  right: 15px;
+  top: 16px;
+  background: #9cb0c4;
+  transform: rotate(45deg);
 }
 .filter .filter__title .filter__arrow.close-block:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 8px;
-    height: 2px;
-    right: 9px;
-    top: 16px;
-    background: #9CB0C4;
-    transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 2px;
+  right: 9px;
+  top: 16px;
+  background: #9cb0c4;
+  transform: rotate(-45deg);
 }
 .filter .filter__title .filter__arrow:before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 8px;
-    height: 2px;
-    right: 9px;
-    top: 16px;
-    background: #9CB0C4;
-    transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 2px;
+  right: 9px;
+  top: 16px;
+  background: #9cb0c4;
+  transform: rotate(45deg);
 }
 .filter .filter__title .filter__arrow:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 8px;
-    height: 2px;
-    right: 15px;
-    top: 16px;
-    background: #9CB0C4;
-    transform: rotate(-45deg);
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 2px;
+  right: 15px;
+  top: 16px;
+  background: #9cb0c4;
+  transform: rotate(-45deg);
 }
 .filter .filter__body .filter__checkbox:last-child {
-    padding-bottom: 16px; 
+  padding-bottom: 16px;
 }
 .filter .checkbox-box {
-    overflow-y: auto;
-    height: 170px;
+  overflow-y: auto;
+  height: 170px;
 }
 .filter .filter-input-wrapper {
-    position: relative;
+  position: relative;
 }
 
-.filter .filter-input-wrapper  .filter__clean-data {
-    background: #5a728b;
-    width: 16px;
-    height: 16px;
-    border-radius: 10px;
-    margin-left: 5px;
-    position: absolute;
-    right: 15px;
-    top: 18px;
-    cursor: pointer;
+.filter .filter-input-wrapper .filter__clean-data {
+  background: #5a728b;
+  width: 16px;
+  height: 16px;
+  border-radius: 10px;
+  margin-left: 5px;
+  position: absolute;
+  right: 15px;
+  top: 18px;
+  cursor: pointer;
 }
 .filter .filter-input-wrapper .filter__clean-data:before {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 8px;
-    height: 2px;
-    right: 4px;
-    top: 7px;
-    background: #DCE3EA;
-    transform: rotate(45deg);
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 2px;
+  right: 4px;
+  top: 7px;
+  background: #dce3ea;
+  transform: rotate(45deg);
 }
-.filter .filter-input-wrapper  .filter__clean-data:after {
-    content: '';
-    position: absolute;
-    display: block;
-    width: 8px;
-    height: 2px;
-    right: 4px;
-    top: 7px;
-    background: #DCE3EA;
-    transform: rotate(-45deg);
+.filter .filter-input-wrapper .filter__clean-data:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 2px;
+  right: 4px;
+  top: 7px;
+  background: #dce3ea;
+  transform: rotate(-45deg);
 }
